@@ -27,3 +27,4 @@ functions:
 package:
     exclude:
         - 'tests/**'
+        - 'README.md'
