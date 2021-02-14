@@ -1,0 +1,4 @@
+/vendor/
+/.serverless/
+/tests/tweet.php
+/tests/run.php

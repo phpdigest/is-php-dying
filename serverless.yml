@@ -1,0 +1,29 @@
+service: app
+
+provider:
+    name: aws
+    region: us-east-1
+    runtime: provided
+
+    environment:
+        CONSUMER_KEY: ${ssm:/isphpdying/CONSUMER_KEY~true}
+        CONSUMER_SECRET: ${ssm:/isphpdying/CONSUMER_SECRET~true}
+        ACCESS_TOKEN: ${ssm:/isphpdying/ACCESS_TOKEN~true}
+        ACCESS_TOKEN_SECRET: ${ssm:/isphpdying/ACCESS_TOKEN_SECRET~true}
+
+plugins:
+    - ./vendor/bref/bref
+
+functions:
+    tweet:
+        handler: index.php
+        description: ''
+        layers:
+            - ${bref:layer.php-74}
+        events:
+            - schedule: rate(1 day)
+
+# Exclude files from deployment
+package:
+    exclude:
+        - 'tests/**'

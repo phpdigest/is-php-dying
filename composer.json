@@ -1,0 +1,11 @@
+{
+  "name": "pronskiy/is-php-dying-bot",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "require": {
+    "php": "7.4.*",
+    "bref/bref": "^0.5.26",
+    "abraham/twitteroauth": "^1.1.0"
+  }
+}
