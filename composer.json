@@ -7,5 +7,8 @@
     "php": "7.4.*",
     "bref/bref": "^0.5.26",
     "abraham/twitteroauth": "^1.1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5.2"
   }
 }
