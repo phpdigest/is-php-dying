@@ -1,8 +1,8 @@
 {
   "name": "phpdigest/is-php-dying",
-  "description": "description",
+  "description": "",
   "minimum-stability": "stable",
-  "license": "proprietary",
+  "license": "MIT",
   "require": {
     "php": "7.4.*",
     "bref/bref": "^0.5.26",
