@@ -111,5 +111,29 @@ return [
         'probability' => 5,
         'type' => 'no',
     ],
-
+    [
+        'text' => 'Dying?',
+        'probability' => 5,
+        'type' => 'no',
+    ],
+    [
+        'text' => 'Yes, if you ignore the PHP usage statistics.',
+        'probability' => 5,
+        'type' => 'no',
+    ],
+    [
+        'text' => 'I don\'t believe it.',
+        'probability' => 5,
+        'type' => 'no',
+    ],
+    [
+        'text' => 'Only in your dreams.',
+        'probability' => 5,
+        'type' => 'no',
+    ],
+    [
+        'text' => 'Yes, PHP 5 is dying.',
+        'probability' => 5,
+        'type' => 'no',
+    ],
 ];
